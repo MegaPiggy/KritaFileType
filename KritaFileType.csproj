@@ -1,0 +1,404 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>default</LangVersion>
+    <Copyright>Copyright © </Copyright>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <DebugType>portable</DebugType>
+	<OutputPath>C:\Program Files\paint.net\FileTypes</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="mscorlib">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\mscorlib.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\Microsoft.CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Base">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Collections">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.ComponentModel">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.ComponentModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Core">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Data">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Effects">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Effects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Effects.Core">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Effects.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Effects.Gpu">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Effects.Gpu.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Effects.Legacy">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Effects.Legacy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Framework">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Fundamentals">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Fundamentals.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.ObjectModel">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Plugins.Compatibility">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Plugins.Compatibility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Primitives">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.PropertySystem">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.PropertySystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Resources">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Resources.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Runtime">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.SystemLayer">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.SystemLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Systrace">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Systrace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.UI">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Windows">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Windows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Windows.Core">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Windows.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PaintDotNet.Windows.Framework">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\PaintDotNet.Windows.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="System">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Buffers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.CodeDom">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.CodeDom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Collections.Concurrent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Collections.Immutable.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Collections.NonGeneric.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Collections.Specialized.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.ComponentModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.ComponentModel.Annotations.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.ComponentModel.DataAnnotations.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.ComponentModel.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.ComponentModel.TypeConverter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Configuration.ConfigurationManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="System.Console">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Console.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Core">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Core.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Data">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Data.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Data.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Data.DataSetExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.Contracts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.Debug.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.DiagnosticSource.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.EventLog">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.EventLog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.EventLog.Messages">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.EventLog.Messages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.PerformanceCounter">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.PerformanceCounter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.Process.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.StackTrace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.Tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.TraceSource.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\..\..\Program Files\paint.net\System.DirectoryServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="System.Drawing">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Drawing.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Drawing.Common">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Drawing.Common.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Drawing.Design">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Drawing.Design.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Drawing.Primitives">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Drawing.Primitives.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Dynamic.Runtime">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Dynamic.Runtime.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Formats.Asn1">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Formats.Asn1.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Formats.Tar">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Formats.Tar.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Globalization">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Globalization.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Globalization.Calendars">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Globalization.Calendars.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Globalization.Extensions">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Globalization.Extensions.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Compression">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Compression.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Compression.Brotli">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Compression.Brotli.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Compression.FileSystem">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Compression.FileSystem.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Compression.ZipFile">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Compression.ZipFile.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.FileSystem">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.FileSystem.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.FileSystem.AccessControl">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.FileSystem.AccessControl.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.FileSystem.DriveInfo">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.FileSystem.DriveInfo.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.FileSystem.Primitives">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.FileSystem.Primitives.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.FileSystem.Watcher">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.FileSystem.Watcher.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Hashing">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Hashing.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.IsolatedStorage">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.IsolatedStorage.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.MemoryMappedFiles">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.MemoryMappedFiles.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Packaging">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Packaging.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Pipes">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Pipes.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.Pipes.AccessControl">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.Pipes.AccessControl.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.IO.UnmanagedMemoryStream">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.IO.UnmanagedMemoryStream.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Linq">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Linq.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Numerics">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Numerics.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Private.CoreLib">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Private.CoreLib.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Private.Xml">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Private.Xml.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Runtime">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Runtime.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Runtime.Serialization">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Runtime.Serialization.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Text.RegularExpressions">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Text.RegularExpressions.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Xml">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Xml.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+	<Reference Include="System.Xml.Linq">
+	  <HintPath>..\..\..\..\..\Program Files\paint.net\System.Xml.Linq.dll</HintPath>
+	  <Private>False</Private>
+	</Reference>
+  </ItemGroup>
+</Project>
