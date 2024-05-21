@@ -44,7 +44,7 @@ namespace KritaFileType
             {
                 SupportsLayers = true,
                 LoadExtensions = new string[] { ".kra" },
-                SaveExtensions = new string[] { ".kra" }
+                //SaveExtensions = new string[] { ".kra" }
             })
         {
         }
